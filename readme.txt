@@ -86,9 +86,9 @@ So, it is a programming task to make a shortcode to add htmlentities to the shor
 No screenshots as this is just a shortcode.
 
 == Changelog ==
-= 1.0 Beta =
+= 1.0 =
 * Plugin created.
 
 == Upgrade Notice ==
-= 1.0 Beta =
+= 1.0 =
 * This is the initial beta release on 7/1/2014
