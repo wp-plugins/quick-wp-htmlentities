@@ -12,6 +12,8 @@ This is a shortcode plugin that applies the PHP htmlentities function to text in
 
 == Description ==
 
+= Overview =
+
 This is a short plugin that emulates the PHP htmlentities function.  With this plugin, HTML and other code can automatically be formatted into HTML entities using a shortcode within posts.  In addition, customizable parameter options are available.
 
 An outer optional HTML "tag" can be added to wrap the shortcode content along with parameters "style" and "class" to style the "tag" if "tag" is declared.  You can define the "style" value inline and the "class" value should be previously defined, probably in the "style.css" file. An inner html tag "wrapper" without "class" or "style" can also be specified.
@@ -21,8 +23,8 @@ You can also use this shortcode inline by declaring the "inline" parameter as "t
 This plugin is intended to work when `wpautop` is in the default state and does not alter the `the_content` hook. If the `the_content` hook has been altered this plugin may not work.  You should leave one empty line above and below both beginning and ending shortcodes when invoking standard formatting.
 
 = Standard Quick WP htmlentities Shortcode Behavior =
-
-**For results, leave a line space above and below both beginning and ending shortcode declarations if not using the inline parameter.  If using the inline parameter leave a space after the begining shortcode and before the ending shortcode. This will apply standard Wordpress formatting to your content block.  If using the inline parameter beginning and ending paragraphs are removed.**
+&nbsp;
+**For results, leave a line space above and below both beginning and ending shortcode declarations if not using the inline parameter. This will apply standard Wordpress formatting to your content block. If using the inline parameter leave a space after the begining shortcode and before the ending shortcode.   If using the inline parameter beginning and ending paragraphs are removed.**
 
 = Standard Block Usage =
 
