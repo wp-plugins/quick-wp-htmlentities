@@ -34,7 +34,7 @@ For best results, leave a line space above and below both beginning and ending s
 
 [/quick-wp-htmlentities]
 
-Donec mauris metus, scelerisque id fermentum id, ornare at metus. 
+Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
 = Standard Inline Usage =
 
