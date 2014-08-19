@@ -42,7 +42,8 @@ Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
 = Custom Block with Parameters =
 
-`Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+`Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
 [quick-wp-htmlentities tag="div" style="margin:0 20px;" class="example" wrapper="code"]
 
 <span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>
