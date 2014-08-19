@@ -26,32 +26,30 @@ For best results, leave a line space above and below both beginning and ending s
 
 = Standard Block Usage =
 
-`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat ut sem eu consectetur. Mauris vestibulum neque id suscipit dictum. Pellentesque iaculis interdum dignissim. Aliquam eu viverra sem. Suspendisse sed augue vel lorem eleifend condimentum at et neque.
+`Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 [quick-wp-htmlentities]
+
+<span style="color:blue">Using a style.</span>
+
+[/quick-wp-htmlentities]
+
+Donec mauris metus, scelerisque id fermentum id, ornare at metus. 
+
+= Standard Inline Usage =
+
+`Lorem ipsum dolor sit amet, consectetur adipiscing elit. [quick-wp-htmlentities inline="true"]<span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>[/quick-wp-htmlentities] Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
+
+= Custom Block with Parameters =
+
+`Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+[quick-wp-htmlentities tag="div" style="margin:0 20px;" class="example" wrapper="code"]
 
 <span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>
 
 [/quick-wp-htmlentities]
 
-Donec mauris metus, scelerisque id fermentum id, ornare at metus. Etiam nulla neque, tristique sit amet ante aliquet, dictum fringilla augue. Aliquam viverra augue nisl, sit amet condimentum magna dapibus pretium. Aenean ut dolor eleifend, posuere sapien in, pharetra tellus.`
-
-= Standard Inline Usage =
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat ut sem eu consectetur. Mauris vestibulum neque id suscipit dictum. Pellentesque iaculis interdum dignissim. Aliquam eu viverra sem. Suspendisse sed augue vel lorem eleifend condimentum at et neque. `[quick-wp-htmlentities inline="true"]<span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>[/quick-wp-htmlentities]` Donec mauris metus, scelerisque id fermentum id, ornare at metus. Etiam nulla neque, tristique sit amet ante aliquet, dictum fringilla augue. Aliquam viverra augue nisl, sit amet condimentum magna dapibus pretium. Aenean ut dolor eleifend, posuere sapien in, pharetra tellus.    
-
-= Custom Block with Parameters =
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat ut sem eu consectetur. Mauris vestibulum neque id suscipit dictum. Pellentesque iaculis interdum dignissim. Aliquam eu viverra sem. Suspendisse sed augue vel lorem eleifend condimentum at et neque.
-
-`[quick-wp-htmlentities tag="div" style="margin:0 20px;" class="example" wrapper="code"]
-
-<span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>
-
-[/quick-wp-htmlentities]`
-
-Donec mauris metus, scelerisque id fermentum id, ornare at metus. Etiam nulla neque, tristique sit amet ante aliquet, dictum fringilla augue. Aliquam viverra augue nisl, sit amet condimentum magna dapibus pretium. Aenean ut dolor eleifend, posuere sapien in, pharetra tellus.    
-
+Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
 == Installation ==
 
