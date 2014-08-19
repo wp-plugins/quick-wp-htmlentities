@@ -22,7 +22,7 @@ This plugin is intended to work when `wpautop` is in the default state and does 
 
 = Standard Quick WP htmlentities Shortcode Behavior =
 
-For best results, leave a line space above and below both begining and end shortcode declarations if not using the inline parameter.  This will apply standard Wordpress formatting to your content block.  If using the inline parameter beginning and ending paragraphs are removed.
+For best results, leave a line space above and below both beginning and ending shortcode declarations if not using the inline parameter.  This will apply standard Wordpress formatting to your content block.  If using the inline parameter beginning and ending paragraphs are removed.
 
 = Standard Block Usage =
 
