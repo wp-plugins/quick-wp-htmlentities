@@ -23,7 +23,7 @@ You can also use this shortcode inline by declaring the "inline" parameter as "t
 This plugin is intended to work when `wpautop` is in the default state and does not alter the `the_content` hook. If the `the_content` hook has been altered this plugin may not work.  You should leave one empty line above and below both beginning and ending shortcodes when invoking standard formatting.
 
 = Standard Quick WP htmlentities Shortcode Behavior =
-**For results, leave a line space above and below both beginning and ending shortcode declarations if not using the inline parameter. This will apply standard Wordpress formatting to your content block. If using the inline parameter leave a space after the begining shortcode and before the ending shortcode.   If using the inline parameter beginning and ending paragraphs are removed.**
+**For results, leave a line space above and below both beginning and ending shortcode declarations if not using the inline parameter. This will apply standard Wordpress formatting to your content block. If using the inline parameter leave a space after the begining shortcode and before the ending shortcode.   Then beginning and ending paragraphs are removed.**
 
 = Standard Block Usage =
 
