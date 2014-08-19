@@ -20,8 +20,6 @@ You can also use this shortcode inline by declaring the "inline" parameter as "t
 
 This plugin is intended to work when `wpautop` is in the default state and does not alter the `the_content` hook. If the `the_content` hook has been altered this plugin may not work.  You should leave one empty line above and below both beginning and ending shortcodes when invoking standard formatting.
 
-== Use ==
-
 = Standard Quick WP htmlentities Shortcode Behavior =
 
 For best results, leave a line space above and below both begining and end shortcode declarations if not using the inline parameter.  This will apply standard Wordpress formatting to your content block.  If using the inline parameter beginning and ending paragraphs are removed.
@@ -31,9 +29,9 @@ For best results, leave a line space above and below both begining and end short
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat ut sem eu consectetur. Mauris vestibulum neque id suscipit dictum. Pellentesque iaculis interdum dignissim. Aliquam eu viverra sem. Suspendisse sed augue vel lorem eleifend condimentum at et neque.
 
 `[quick-wp-htmlentities]`
-
+&nbsp;
 `<span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>`
-
+&nbsp;
 `[/quick-wp-htmlentities]`
 
 Donec mauris metus, scelerisque id fermentum id, ornare at metus. Etiam nulla neque, tristique sit amet ante aliquet, dictum fringilla augue. Aliquam viverra augue nisl, sit amet condimentum magna dapibus pretium. Aenean ut dolor eleifend, posuere sapien in, pharetra tellus.
@@ -47,9 +45,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat ut sem e
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat ut sem eu consectetur. Mauris vestibulum neque id suscipit dictum. Pellentesque iaculis interdum dignissim. Aliquam eu viverra sem. Suspendisse sed augue vel lorem eleifend condimentum at et neque.
 
 `[quick-wp-htmlentities tag="div" style="margin:0 20px;" class="example" wrapper="code"]`
-
+&nbsp;
 `<span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>`
-
+&nbsp;
 `[/quick-wp-htmlentities]`
 
 Donec mauris metus, scelerisque id fermentum id, ornare at metus. Etiam nulla neque, tristique sit amet ante aliquet, dictum fringilla augue. Aliquam viverra augue nisl, sit amet condimentum magna dapibus pretium. Aenean ut dolor eleifend, posuere sapien in, pharetra tellus.    
