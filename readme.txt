@@ -22,7 +22,7 @@ This plugin is intended to work when `wpautop` is in the default state and does 
 
 = Standard Quick WP htmlentities Shortcode Behavior =
 
-For best results, leave a line space above and below both beginning and ending shortcode declarations if not using the inline parameter.  This will apply standard Wordpress formatting to your content block.  If using the inline parameter beginning and ending paragraphs are removed.
+**For results, leave a line space above and below both beginning and ending shortcode declarations if not using the inline parameter.  If using the inline parameter leave a space after the begining shortcode and before the ending shortcode. This will apply standard Wordpress formatting to your content block.  If using the inline parameter beginning and ending paragraphs are removed.**
 
 = Standard Block Usage =
 
@@ -38,7 +38,11 @@ Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
 = Standard Inline Usage =
 
-`Lorem ipsum dolor sit amet, consectetur adipiscing elit. [quick-wp-htmlentities inline="true"]<span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>[/quick-wp-htmlentities] Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
+`Lorem ipsum dolor sit amet, consectetur adipiscing elit. [quick-wp-htmlentities inline="true"]
+
+<span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>
+
+[/quick-wp-htmlentities] Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
 = Custom Block with Parameters =
 
