@@ -20,6 +20,8 @@ An outer optional HTML "tag" can be added to wrap the shortcode content along wi
 
 You can also use this shortcode inline by declaring the "inline" parameter as "true", and the shortcode will render the content inline.  As previously discussed, you can use the "wrapper" parameter along with the "style" and "class" parameters if "tag" is defined.  
 
+= Important =
+
 This plugin is intended to work when `wpautop` is in the default state and does not alter the `the_content` hook. If the `the_content` hook has been altered this plugin may not work.  You should leave one empty line above and below both beginning and ending shortcodes when invoking standard formatting.
 
 = Standard Quick WP htmlentities Shortcode Behavior =
