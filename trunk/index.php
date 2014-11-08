@@ -2,7 +2,7 @@
 /*
 Plugin Name: Quick WP htmlentities
 Description: This is a shortcode plugin that applies the PHP htmlentities function to text in a post. 
-Version: 1.0
+Version: 1.1
 Author: Willy Richardson
 Author URI: http://www.brimbox.com/wordpress/
 License: GPLv2 or later
@@ -37,13 +37,19 @@ function quick_wp_htmlentities_func_main($atts, $content = null) {
     for ($i=0; $i<$count_matches; $i++) {       
         
         //deal with shortcode auto paragraph
+        
         $test_content = preg_replace( '#^<\/p>|^<br \/>|<p>$#', '', wpautop($matches[5][$i],1) );
         $content = preg_replace( '#^<\/p>|^<br \/>|<p>$#', '', $content );
+        //wpautop apparently fixes ampersands
+        $content = str_replace("&#038;", "&", $content);
 
         //compare content to see if it is the content being passed in, a must for multiple shortcodes        
         if (strstr($content, $test_content)) {            
             //main line, convert return content with htmlentities then run through wpautop
             $return_content = wpautop(htmlentities(trim($matches[5][$i])), 1);
+            //purge new lines, tabs, and return carriages 
+            $return_content = str_replace(array("\r","\n","\t"), "", $return_content);
+            
             //convert string "true" to boolean
             if (filter_var($a['inline'], FILTER_VALIDATE_BOOLEAN)) {
                 //remove begin and end paragraphs for inline use
@@ -63,7 +69,7 @@ function quick_wp_htmlentities_func_main($atts, $content = null) {
                 $begin_tag = "<" . $a['tag'] . $style . $class . ">";
                 $end_tag = "</" . $a['tag'] . ">";
             }
-        //return content   
+        //return content
         return $begin_tag . $begin_wrapper .  $return_content  . $end_wrapper . $end_tag;                         
         }
     }
