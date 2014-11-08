@@ -2,7 +2,7 @@
 /*
 Plugin Name: Quick WP htmlentities
 Description: This is a shortcode plugin that applies the PHP htmlentities function to text in a post. 
-Version: 1.0
+Version: 1.1
 Author: Willy Richardson
 Author URI: http://www.brimbox.com/wordpress/
 License: GPLv2 or later
