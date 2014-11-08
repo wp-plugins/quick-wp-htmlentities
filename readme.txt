@@ -112,4 +112,4 @@ No screenshots as this is just a shortcode.
 
 = 1.1 =
 * Fixed problem with ampersands (&) which caused plugin to fail (wpautop already substitutes htmlentitities for ampersands).
-* Now purges line breaks, tabs and carriage returns from output so <pre> tags and related styles work.
+* Now purges line breaks, tabs and carriage returns from output so pre tags and related styles work.
