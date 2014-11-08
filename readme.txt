@@ -3,7 +3,7 @@ Contributors: willrich33
 Donate link: http://www.brimbox.com/wordpress/
 Tags: codeblocks, formatting, htmlentities
 Requires at least: 3.9.1
-Tested up to: 3.9.1
+Tested up to: 4.0
 Stable tag: 1.0 Beta
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -22,10 +22,7 @@ You can also use this shortcode inline by declaring the "inline" parameter as "t
 
 = Important =
 
-This plugin is intended to work when `wpautop` is in the default state and does not alter the `the_content` hook. If the `the_content` hook has been altered this plugin may not work.  You should leave one empty line above and below both beginning and ending shortcodes when invoking standard formatting.
-
-= Standard Quick WP htmlentities Shortcode Behavior =
-**For results, leave a line space above and below both beginning and ending shortcode declarations if not using the inline parameter. This will apply standard Wordpress formatting to your content block. If using the inline parameter leave a space after the begining shortcode and before the ending shortcode.   Then beginning and ending paragraphs are removed.**
+This plugin is intended to work when `wpautop` is in the default state and does not alter the `the_content` hook. If the `the_content` hook has been altered this plugin may not work.  You should leave one empty line above and below both beginning and ending shortcodes when invoking standard formatting. If using the inline parameter leave a space after the begining shortcode and before the ending shortcode.  
 
 = Standard Block Usage =
 
@@ -39,6 +36,18 @@ This plugin is intended to work when `wpautop` is in the default state and does 
 
 Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
+= Code Block with PRE spaces =
+
+`[quick-wp-htmlentities tag="code" style="white-space:pre-wrap;"]
+
+function output_span()
+    {
+    echo "<span style=\"color:blue\">Use a class & a span.</span>";
+    }
+
+[/quick-wp-htmlentities]`
+
+
 = Standard Inline Usage =
 
 `Lorem ipsum dolor sit amet, consectetur adipiscing elit. [quick-wp-htmlentities inline="true"]
@@ -47,7 +56,8 @@ Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
 [/quick-wp-htmlentities] Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
-= Custom Block with Parameters =
+
+= Custom Block with all Parameters =
 
 `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
@@ -92,6 +102,14 @@ No screenshots as this is just a shortcode.
 = 1.0 =
 * Plugin created.
 
+= 1.1 =
+* Fixed problem with ampersands (&) which caused plugin to fail (wpautop already substitutes htmlentitities for ampersands).
+* **Now purges line breaks, tabs and carriage returns from output so <pre> tags and related styles work.**
+
 == Upgrade Notice ==
 = 1.0 =
 * This is the initial beta release on 7/1/2014
+
+= 1.1 =
+* Fixed problem with ampersands (&) which caused plugin to fail (wpautop already substitutes htmlentitities for ampersands).
+* **Now purges line breaks, tabs and carriage returns from output so <pre> tags and related styles work.**
