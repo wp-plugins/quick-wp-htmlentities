@@ -1,6 +1,6 @@
 === Quick WP htmlentities ===
 Contributors: willrich33
-Donate link: http://www.brimbox.com/wordpress/
+Donate link: http://www.brimbox.com/services/#tag
 Tags: codeblocks, formatting, htmlentities
 Requires at least: 3.9.1
 Tested up to: 4.0
@@ -99,17 +99,18 @@ So, it is a programming task to make a shortcode to add htmlentities to the shor
 No screenshots as this is just a shortcode.
 
 == Changelog ==
+= 1.1 =
+* Fixed problem with ampersands (&) which caused plugin to fail (wpautop already substitutes htmlentitities for ampersands).
+* Now purges line breaks, tabs and carriage returns from output so pre tags and related styles work.
+
 = 1.0 =
 * Plugin created.
 
+== Upgrade Notice ==
 = 1.1 =
 * Fixed problem with ampersands (&) which caused plugin to fail (wpautop already substitutes htmlentitities for ampersands).
 * Now purges line breaks, tabs and carriage returns from output so pre tags and related styles work.
 
-== Upgrade Notice ==
 = 1.0 =
 * This is the initial beta release on 7/1/2014
 
-= 1.1 =
-* Fixed problem with ampersands (&) which caused plugin to fail (wpautop already substitutes htmlentitities for ampersands).
-* Now purges line breaks, tabs and carriage returns from output so pre tags and related styles work.
