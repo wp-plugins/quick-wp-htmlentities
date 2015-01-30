@@ -3,7 +3,7 @@ Contributors: willrich33
 Donate link: http://www.brimbox.com/services/#tag
 Tags: codeblocks, formatting, htmlentities
 Requires at least: 3.9.1
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 1.0 Beta
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -14,15 +14,13 @@ This is a shortcode plugin that applies the PHP htmlentities function to text in
 
 = Overview =
 
-This is a short plugin that emulates the PHP htmlentities function.  With this plugin, HTML and other code can automatically be formatted into HTML entities using a shortcode within posts.  In addition, customizable parameter options are available.
+This is a short plugin that emulates the PHP htmlentities function.  With this plugin, HTML and other code can automatically be formatted into HTML entities using a shortcode in paragraphs within posts.  In addition, customizable parameter options are available.
 
 An outer optional HTML "tag" can be added to wrap the shortcode content along with parameters "style" and "class" to style the "tag" if "tag" is declared.  You can define the "style" value inline and the "class" value should be previously defined, probably in the "style.css" file. An inner html tag "wrapper" without "class" or "style" can also be specified.
 
-You can also use this shortcode inline by declaring the "inline" parameter as "true", and the shortcode will render the content inline.  As previously discussed, you can use the "wrapper" parameter along with the "style" and "class" parameters if "tag" is defined.  
-
 = Important =
 
-This plugin is intended to work when `wpautop` is in the default state and does not alter the `the_content` hook. If the `the_content` hook has been altered this plugin may not work.  You should leave one empty line above and below both beginning and ending shortcodes when invoking standard formatting. If using the inline parameter leave a space after the begining shortcode and before the ending shortcode.  
+This plugin is intended to work when `wpautop` is in the default state and does not alter the `the_content` hook. If the `the_content` hook has been altered this plugin may not work.  You should leave one empty line above and below both beginning and ending shortcodes when invoking standard formatting.   
 
 = Standard Block Usage =
 
@@ -46,15 +44,6 @@ function output_span()
     }
 
 [/quick-wp-htmlentities]`
-
-
-= Standard Inline Usage =
-
-`Lorem ipsum dolor sit amet, consectetur adipiscing elit. [quick-wp-htmlentities inline="true"]
-
-<span style="color:blue" class="sample">This is how you use a style and a class called sample.</span>
-
-[/quick-wp-htmlentities] Donec mauris metus, scelerisque id fermentum id, ornare at metus.`
 
 
 = Custom Block with all Parameters =
@@ -99,6 +88,7 @@ So, it is a programming task to make a shortcode to add htmlentities to the shor
 No screenshots as this is just a shortcode.
 
 == Changelog ==
+
 = 1.1 =
 * Fixed problem with ampersands (&) which caused plugin to fail (wpautop already substitutes htmlentitities for ampersands).
 * Now purges line breaks, tabs and carriage returns from output so pre tags and related styles work.
